@@ -443,12 +443,14 @@ export default function ComingSoonPage() {
         }}>
           <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: 11, textDecoration: 'none' }}>
             <div style={{
-              width: '35%', height: '35%', background: '#000', borderRadius: 9,
-              display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
-            }}>
-              <img src={LogoLight} alt="Talexhub"
-                style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
-            </div>
+  width: 'clamp(100px, 40vw, 160px)',
+  height: 'auto',
+  background: '#000', borderRadius: 9,
+  display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0,
+}}>
+  <img src={LogoLight} alt="Talexhub"
+    style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block' }} />
+</div>
           </Link>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
